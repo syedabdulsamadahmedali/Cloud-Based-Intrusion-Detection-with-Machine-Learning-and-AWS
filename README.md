@@ -123,25 +123,3 @@ python app.py
 ![image](https://github.com/user-attachments/assets/235e914a-9a75-400b-a307-22244701be57)
 
 
-
-### Security Testing
-- Unauthorized API requests should return **401 Unauthorized**.
-- Logs should not be accessible outside of AWS services.
-
-## Challenges & Solutions
-| Issue | Solution |
-|-------|----------|
-| High cost with NAT Gateway | Switched to **NAT Instance**, then eliminated preprocessing server |
-| Lambda timeout issues | Increased memory and execution time |
-| Model misclassifications | Improved **feature engineering** and retrained model |
-
-## Future Enhancements
-- **Real-Time Stream Processing** using AWS Kinesis.
-- **Automated Model Retraining** when new logs are ingested.
-- **Anomaly Scoring** for better threat classification.
-
-## Contributor
-**Mohammed Ghayasuddin**
-
-
-
